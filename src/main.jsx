@@ -18,6 +18,7 @@ import MyTasks from './pages/Dashboard/MyTasks';
 import { DndProvider } from 'react-dnd'
 import { HTML5Backend } from 'react-dnd-html5-backend'
 import Gallery from './pages/Gallery';
+import EditTask from './pages/Dashboard/EditTask';
 
 
 // route
@@ -42,6 +43,11 @@ const router = createBrowserRouter([
       {
         path: "register",
         element: <Register></Register>
+      },
+      {
+        path: "tasks/:id",
+        element:<EditTask></EditTask>,
+        loader: ({params}) => fetch(`http://localhost:5000/tasks/${params.id}`)
       },
       {
         path: "dashboard",

@@ -62,13 +62,7 @@ const DashboardHome = () => {
 
     return (
         <div>
-            <div className='flex gap-2 items-center'>
-                <img className='w-10 h-10 rounded-full' src={user?.photoURL} alt={user?.displayName} />
-                <div className="">
-                    <h2 className='text-lg font-bold capitalize'>{user?.displayName}</h2>
-                    <p className='text-sm text-gray-500 -mt-1'>{user?.email}</p>
-                </div>
-            </div>
+           
             <form onSubmit={handleSubmit(onSubmit)} className='flex py-3 flex-col gap-2'>
 
                {errors.title && <span className="text-red-600">Title is required</span>}

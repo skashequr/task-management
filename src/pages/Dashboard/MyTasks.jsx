@@ -6,6 +6,7 @@ import usePublicAxios from "../../hooks/usePublicAxios";
 import { AuthContext } from "../../provider/AuthProvider";
 import Task from "../../components/Task";
 import { useDrop } from "react-dnd";
+import { toast } from "react-toastify";
 
 
 const MyTasks = () => {
@@ -41,7 +42,7 @@ const MyTasks = () => {
       .catch(err => {
         console.log(err)
       })
-  }, [user,handleDelete])
+  }, [user , axiosPublic])
 
 
 

@@ -1,6 +1,8 @@
 
 import { Link } from 'react-router-dom'
 
+
+
 const Home = () => {
   return (
     <div style={{ backgroundImage: 'url("https://builtin.com/sites/www.builtin.com/files/styles/og/public/2022-12/laptop-agencies-consulting-website-development-companies.png")' }} className='h-screen  w-full bg-no-repeat bg-center bg-cover'>
@@ -15,8 +17,11 @@ const Home = () => {
             <button className='bg-orange-700 text-white w-fit  py-1 px-3 rounded-md'>
               Let’s Explore
             </button></Link>
+            
         </div>
+        
       </div>
+      
     </div>
   )
 }
