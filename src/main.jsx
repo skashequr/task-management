@@ -17,6 +17,7 @@ import MyTasks from './pages/Dashboard/MyTasks';
 // dnd durg and drop
 import { DndProvider } from 'react-dnd'
 import { HTML5Backend } from 'react-dnd-html5-backend'
+import Gallery from './pages/Gallery';
 
 
 // route
@@ -29,6 +30,10 @@ const router = createBrowserRouter([
       {
         index: true,
         element: <Home></Home>
+      },
+      {
+        path: "gallery",
+        element: <Gallery></Gallery>
       },
       {
         path: "login",
