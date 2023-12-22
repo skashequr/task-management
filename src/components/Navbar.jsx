@@ -22,18 +22,18 @@ const Navbar = () => {
 
     // navlink for re usable
     const links = <>
-        <li><NavLink to="/" className={({ isActive }) => isActive ? "border-b-2 border-red-600 text-white font-semibold" : ""}>  Home </NavLink></li>
-       
+        <li><NavLink to="/" className={({ isActive }) => isActive ? "border-2 p-2 rounded-md border-red-600 text-white font-semibold" : ""}>  Home </NavLink></li>
+        <li><NavLink to="/gallery" className={({ isActive }) => isActive ? "border-2 p-2 rounded-md border-red-600 text-white font-semibold" : ""}>  Gallary </NavLink></li>
         
         {
             user ? <>
-            <li><NavLink to="/dashboard" className={({ isActive }) => isActive ? "border-b-2 border-red-600 text-white font-semibold" : ""}>  Dashboard </NavLink></li>
-            <li><button onClick={logout}  className={({ isActive }) => isActive ? "border-b-2 border-red-600 text-white font-semibold" : ""}>  Logout </button></li>
+            <li><NavLink to="/dashboard" className={({ isActive }) => isActive ? "border-2 p-2 rounded-md border-red-600 text-white font-semibold" : ""}>  Dashboard </NavLink></li>
+            <li><button onClick={logout}  className={({ isActive }) => isActive ? "border-2 p-2 rounded-md border-red-600 text-white font-semibold" : ""}>  Logout </button></li>
             </>
              : 
             <>
-            <li><NavLink to="/login" className={({ isActive }) => isActive ? "border-b-2 border-red-600 text-white font-semibold" : ""}>  Login </NavLink></li>
-            <li><NavLink to="/register" className={({ isActive }) => isActive ? "border-b-2 border-red-600 text-white font-semibold" : ""}>  Register </NavLink></li>
+            <li><NavLink to="/login" className={({ isActive }) => isActive ? "border-2 p-2 rounded-md border-red-600 text-white font-semibold" : ""}>  Login </NavLink></li>
+            <li><NavLink to="/register" className={({ isActive }) => isActive ? "border-2 p-2 rounded-md border-red-600 text-white font-semibold" : ""}>  Register </NavLink></li>
             </>
         }
     </>
